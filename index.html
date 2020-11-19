@@ -13,6 +13,7 @@
     <header>
         <h1>M y L o g</h1>
     </header>
+    <section>
     <main>
 <!-- メニュー画面 -->
     <div class="content active" id="manu">
@@ -40,10 +41,11 @@
             <p>評価</p>
             <select type="text" id="evaluation">
                 <option value="">選択</option>
+                <option value="★★★★★">★★★★★</option>
+                <option value="★★★★">★★★★</option>
                 <option value="★★★">★★★</option>
                 <option value="★★">★★</option>
                 <option value="★">★</option>
-            <!-- <input type="text" id="evaluation"> -->
             </select>
         </div>
         <div class="category">
@@ -102,7 +104,13 @@
         <div id = scroll>
             <a href="#list" class="topbuttom"></a>
         </div>
+        <div class="modal ">
+            <div class="modal-content">
+                <p class="modal-close" id="listclear"></p>
+            </div>
+        </div>
     </div>
+    </section>
     </main>
 </body>
 </html>
