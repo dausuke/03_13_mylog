@@ -106,12 +106,13 @@ input{
     z-index: 5;
 }
 select{
-    width: 30rem;
-    height: 2rem;
+    width: 30.63rem;
+    height: 2.63rem;
     font-size: 1.5rem;
     border: solid;
     background-color: lightgray;
 }
+
 textarea{
     width: 30rem;
     height: 15rem;
@@ -279,4 +280,294 @@ textarea{
 .modal-close{
     color: white;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+    /* 550px以下に適用されるCSS（スマホ用） */
+    html{
+        font-size: 40px;
+        }
+    body{
+	    font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-size: 0.35rem;
+        text-align: center;
+        background-color: rgba(48, 65, 65, 0.089);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section{
+        width: 90%;
+        background-color: white;
+    }
+    header{
+        background: url(../img/backgrounds_001.jpg);
+        /* background: url(https://dausuke.github.io/03_13_mylog/img/_backgrounds_001.jpg); */
+        background-size: cover;
+        background-position: center;
+        height: 1.5rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-family: 'Xanh Mono', monospace;
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: #FFF;
+        text-shadow: 1.5px 1.5px 1.5px #333;
+        margin: 0;
+    }
+    .buttom3d {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 10px;
+        color: #799dec;
+        text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+    }
+    .buttom3d:active {
+        top: 4px;
+        text-shadow: none;
+    }
+/* 画面切り替えのため（表示・非表示） */
+    .content {
+        display: none;
+    }
+    .content.active {
+        display: block;
+    }
+/* メニュー画面 */
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .tab li{
+        font-size: 20px;
+        height: 50px;
+        width: 150px;
+	    display: flex;
+	    align-items: center;
+        justify-content: center;
+        width: 300px;
+	    height: 60px;  
+        margin-bottom: 3em;
+    }
+    .tab a{
+        font-weight: bold;
+    }
+
+    .fivelist{
+        border: solid 3px ;
+    }
+/* 入力画面 */
+    button{
+        background-color: rgb(101, 245, 5);
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        width: 1.2rem;
+        height: 0.45rem;
+        border: solid 0.5px rgb(101, 245, 5);
+        border-bottom: solid 1.5px rgb(57, 138, 3);
+        border-radius: 100vh;
+        outline: none; 
+        margin: 0.2rem;
+    }
+    button:active{
+        transform: translateY(4px);
+  	    border-bottom: none;
+    }
+    input{
+        width: 3rem;
+        height: 0.2rem;
+        font-size: 0.15rem;
+        border: solid;
+        background-color: lightgray;
+        z-index: 5;
+    }
+    select{
+        width: 3.3rem;
+        height: 0.36rem;
+        font-size: 0.15rem;
+        border: solid;
+        background-color: lightgray;
+    }
+
+    textarea{
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 0.15rem;
+        border: solid;
+        background-color: lightgray;
+    }
+/* 検索画面 */
+    .kensakuitem{
+        background-color: lightgray;
+        width: 100%;
+        height: 1.6rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .kensakuitem span{
+        display: block;
+        position: absolute;
+    }
+    .kensakudata p{
+        font-size: 0.15rem;
+    }
+    .kensakuitem span:nth-child(1){
+        top: 0.1rem;
+    }
+    .kensakuitem span:nth-child(2){
+        left: 0.1rem;
+        top: 50%;
+    }
+    .kensakuitem span:nth-child(3){
+        left: 0.1rem;
+        bottom: 0.1rem;
+    }
+    .kensakuitem span:nth-child(4){
+        right: 0.1rem;
+        bottom: 0.1rem;
+    }
+    .kensakuitem span:nth-child(5){
+        right: 0.1rem;
+        top: 50%;
+    }
+/* リスト一覧へのリンクボタン */
+    .kensakuitem span:nth-child(6){
+        right: 0.2rem;        
+        top: 0.15rem;
+        font-size: 0.13rem;
+        width: 0.75rem;
+        border-bottom: 5px solid #9f000c;
+        background-color:  #fa0303;
+        border-radius: 100vh;
+    }
+    .kensakuitem span:nth-child(6):active{
+        transform: translateY(5px);
+  	    border-bottom: none;
+    }
+    .kensakuitem span a{
+        text-decoration: none;
+        padding: 0.03rem;
+        color: white;
+    }
+
+/* 表示画面 */
+
+    #list p{
+        font-size: 0.15rem;
+    }
+    #list ul{
+        margin-top: 0.4rem;
+        margin-bottom: 0.3rem;
+    }
+    #scroll{
+        width: 17.5;
+        height: 12.5px;
+        position: fixed;
+        right: 4px;
+        bottom: 20px;
+        opacity: 0.8;
+        border-radius: 4px;
+        background-color: #666;
+    }
+    #scroll a{
+        position: relative;
+        display: block;
+        width: 17.5;
+        height: 12.5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    #scroll a::before{
+        font-family: "Font Awesome 5 Free";
+        content: '\f062';
+        font-weight: 900;
+        font-size: 25px;
+        color: #fff;
+        position: absolute;
+        width: 6.25px;
+        height: 6.25px;
+        top: 2.5px;
+        bottom: 2.5px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .listitem {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        border-top: rgb(64, 6, 224) solid 2px;
+        position: relative;
+    }
+    .listitem p{
+        margin-top: 0.1rem;
+        margin-bottom: 0;
+    }
+    .listfreetext{
+        margin-bottom: 0.15rem;
+    }
+    .clear{
+        right: 0.2rem;        
+        bottom: 0.15rem;
+        font-size: 0.13rem;
+        width: 0.75rem;
+        border-bottom: 5px solid #9f000c;
+        background-color:  #fa0303;
+        border-radius: 100vh;
+        color: white;
+        position: absolute;
+    }
+    .clear:active{
+        transform: translateY(5px);
+  	    border-bottom: none;
+    }
+/* モーダルウィンドウ */
+    .modal{
+        display: none;
+        height: 2rem;
+        position: fixed;
+        top: 0;
+        width: 5rem;
+        z-index: 10;
+    }
+/* モーダルウィンドウ(消去確認) */
+
+    .modal-content{
+        background: rgba(0,0,0,0.8);
+        left: 80%;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 1.1rem;
+        height: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-close{
+        color: white;
+        font-size: 0.15rem;
+    }
+
 }
