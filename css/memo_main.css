@@ -15,8 +15,8 @@ section{
     background-color: white;
 }
 header{
-    /* background: url(../img/_backgrounds_001.jpg); */
-    background: url(https://dausuke.github.io/03_13_mylog/img/_backgrounds_001.jpg);
+    background: url(../img/_backgrounds_001.jpg);
+    /* background: url(https://dausuke.github.io/03_13_mylog/img/_backgrounds_001.jpg); */
     background-size: cover;
     background-position: center;
     height: 15rem;
