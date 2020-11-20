@@ -299,6 +299,9 @@ textarea{
     body{
         font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     }
+    h1{
+        letter-spacing: -0.15em;
+    }
     .kensakuitem{
         background-color: lightgray;
         width: 100%;
