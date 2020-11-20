@@ -286,15 +286,18 @@ textarea{
     color: white;
     font-size: 1.5rem;
 }
-@media screen and (max-width: 550px) {
-    /* 550px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
     html{
         font-size: 10px;
+    }
+    body{
+        font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     }
     .kensakuitem{
         background-color: lightgray;
         width: 100%;
-        height: 30rem;
+        height: 40rem;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -352,5 +355,11 @@ textarea{
         border-radius: 100vh;
         color: white;
         position: static;
+    }
+    #scroll{
+        z-index: 10;
+    }
+    .listitem{
+        z-index: 5;
     }
 }
