@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Xanh+Mono:ital@1&display=swap');
 
 body{
-    text-align: center;
     background-color: rgba(48, 65, 65, 0.089);
     margin: 0;
     padding: 0;
@@ -11,8 +10,13 @@ body{
     flex-direction: column;
 }
 section{
+    /* text-align: center; */
     width: 90%;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 header{
     background: url(../img/backgrounds_001.jpg);
@@ -290,7 +294,6 @@ textarea{
     body{
 	    font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
         font-size: 0.35rem;
-        text-align: center;
         background-color: rgba(48, 65, 65, 0.089);
         margin: 0;
         padding: 0;
@@ -301,7 +304,12 @@ textarea{
     }
     section{
         width: 90%;
+        height: 100%;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     header{
         background: url(../img/backgrounds_001.jpg);
@@ -358,7 +366,7 @@ textarea{
         justify-content: center;
         width: 300px;
 	    height: 60px;  
-        margin-bottom: 3em;
+        margin-bottom: 0.3em;
     }
     .tab a{
         font-weight: bold;
@@ -412,7 +420,7 @@ textarea{
     .kensakuitem{
         background-color: lightgray;
         width: 100%;
-        height: 1.6rem;
+        height: 4rem;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -423,11 +431,14 @@ textarea{
     .kensakuitem span{
         display: block;
         position: absolute;
+        width: 146px;
+        height: 10px;
+        font-size: 0.15px;
     }
     .kensakudata p{
         font-size: 0.15rem;
     }
-    .kensakuitem span:nth-child(1){
+    /* .kensakuitem span:nth-child(1){
         top: 0.1rem;
     }
     .kensakuitem span:nth-child(2){
@@ -445,14 +456,15 @@ textarea{
     .kensakuitem span:nth-child(5){
         right: 0.1rem;
         top: 50%;
-    }
+    } */
 /* リスト一覧へのリンクボタン */
     .kensakuitem span:nth-child(6){
         right: 0.2rem;        
         top: 0.15rem;
         font-size: 0.13rem;
-        width: 0.75rem;
-        border-bottom: 5px solid #9f000c;
+        width: 1.1rem;
+        height: 0.23rem;
+        border-bottom: 3px solid #9f000c;
         background-color:  #fa0303;
         border-radius: 100vh;
     }
@@ -464,6 +476,7 @@ textarea{
         text-decoration: none;
         padding: 0.03rem;
         color: white;
+        font-size: 0.13rem;
     }
 
 /* 表示画面 */
