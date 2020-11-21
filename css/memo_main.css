@@ -265,7 +265,6 @@ textarea{
 }
 /* モーダルウィンドウ */
 .modal{
-    display: none;
     height: 20rem;
     position: fixed;
     top: 0;
@@ -274,7 +273,7 @@ textarea{
 }
 /* モーダルウィンドウ(消去確認) */
 
-.modal-content{
+/* .modal-content{
     background: rgba(0,0,0,0.8);
     left: 80%;
     padding: 40px;
@@ -286,9 +285,9 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .modal-close{
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 @media screen and (max-width: 480px) {
