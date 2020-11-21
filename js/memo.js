@@ -48,7 +48,8 @@ $(function () {
         const clearname = $(this).siblings('.listkname').val();
         console.log(clearname);
         $(this).parents('.listitem').append('<div class= modal ></div >')
-        $(this).parents('.listitem').find('.modal').append('<p>消去</p>');
+        $(this).parents('.listitem').find('.modal').append('<div class = modal-content></div>')
+        $(this).parents('.listitem').find('.modal-content').append('<p>消去</p>');
         $('.modal p').addClass("modal-close")
         $('modal').fadeIn();
         // モーダルウィンドウ表示・非表示(消去の確認画面)
